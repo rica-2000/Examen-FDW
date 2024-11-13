@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+}
+
+.task-list {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tasksContainer .task {
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task.alta {
+    background-color: red;
+    color: white;
+}
+
+.task.media {
+    background-color: yellow;
+    color: black;
+}
+
+.task.baja {
+    background-color: green;
+    color: white;
+}
+
+#tasksContainer .task button {
+    background-color: red;
+    color: #FFFFFF;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#confirmDialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+#confirmDialog p {
+    margin-bottom: 20px;
+}
+
+#confirmDialog button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
